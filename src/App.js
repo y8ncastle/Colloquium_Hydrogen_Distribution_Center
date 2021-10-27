@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
 import './App.css';
 import Search from "./components/Search";
 import Block from "./components/Block";
 import Transactions from "./components/Transactions";
 import NodeInfo from "./components/NodeInfo";
 import Scenario from "./components/Scenario";
-//import Web3 from 'web3';
 
 class App extends Component {
   render() {
@@ -27,7 +25,6 @@ class App extends Component {
                 <Scenario></Scenario>
               </div>
             </div>
-            
           </header>
         </div>
       );

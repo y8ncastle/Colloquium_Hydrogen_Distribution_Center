@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Scenario extends Component {
     render() {
         return (
-                <div class="col-lg-6">
+                <div class="col-lg-8">
                     <div class="card shadow mb-4">
                         <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                             <h6 class="m-0 font-weight-bold text-primary">Scenario</h6>
