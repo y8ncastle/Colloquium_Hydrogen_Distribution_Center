@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 class Block extends Component {
     render() {
         return (
-                <div class="col-lg-6">
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                            <h6 class="m-0 font-weight-bold text-primary">Blocks</h6>
-                        </div>
-                        <div class="card-body">
+            <div class="col-lg-6">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                        <h6 class="m-0 font-weight-bold text-primary">Blocks</h6>
+                    </div>
+                    <div class="card-body">
                         <div class="table-wrapper-scroll-y my-custom-scrollbar">
                             <div class="table-responsive">
                                 <table class="table table-hover table-striped" id="dataTable" width="100%" cellspacing="0">
@@ -40,8 +40,8 @@ class Block extends Component {
                             </div>
                         </div>
                     </div>
-                    </div>
                 </div>
+            </div>
         );
     }
 }
