@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
 
-class Scene1 extends Component {
+const imagestyle = {
+    width: "20vh",
+    height: "20vh"
+};
+
+class Scene0 extends Component {
     render() {
         return (
-            <div>
-                <img src="/assets/car.png" height="50" width = "50" alt="car"/>
-                <h3>Loading...</h3>
+            <div class="text-center">
+                <img style={imagestyle} class="rounded" src="/assets/car.png" alt="car"/>
+                <h3 class="m-0 text-dark bg-white">Loading...</h3>
             </div>
         )
     }
 }
-export default Scene1;
+export default Scene0;

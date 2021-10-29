@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import Scene0 from './scene/Scene0';
 
-let scene = 0;  //0 to 10
+let sceneNum = 0;  //0 to 9
 function selectScene(value){
-    if (value === 0) return <Scene0></Scene0>
-    else            return <h6>undefined</h6>
+
+    if(!value && value!==0)  return <h3>undefined</h3>
+    switch (value){
+        case 0:
+            return <Scene0></Scene0>
+        default:
+            return <h3>default</h3>
+    }
+    
 }
 
 class Scenario extends Component {
@@ -18,7 +25,7 @@ class Scenario extends Component {
                         <div class="card-body">
                             <div class="chart-area">
                             { 
-                                selectScene(scene)
+                                selectScene(sceneNum)
                             }               
                             </div>
                         </div>
