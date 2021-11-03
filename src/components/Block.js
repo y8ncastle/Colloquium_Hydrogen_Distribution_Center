@@ -2,6 +2,19 @@ import React, { Component } from 'react';
 
 class Block extends Component {
     render() {
+        var list = [];
+        var data = this.props.data;
+        var i = 0;
+        while(i<data.length){
+            list.push(
+                <tr>
+                    <td>{data[i].num}</td>
+                    <td>{data[i].mined}</td>
+                    <td>{data[i].time}</td>
+                </tr>
+            );
+            i+=1;
+        }
         return (
             <div class="col-lg-6">
                 <div class="card shadow mb-4">
@@ -20,21 +33,7 @@ class Block extends Component {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>13484980</td>
-                                            <td>0x00192fb10df37c9fb26829eb2cc623cd1bf599e8</td>
-                                            <td>37 mins ago</td>
-                                        </tr>
-                                        <tr>
-                                            <td>13484979</td>
-                                            <td>0xea674fdde714fd979de3edf0f56aa9716b898ec8 </td>
-                                            <td>40 mins ago</td>
-                                        </tr>
-                                        <tr>
-                                            <td>13484978</td>
-                                            <td>0x829bd824b016326a401d083b33d092293333a830</td>
-                                            <td>41 mins ago</td>
-                                        </tr>
+                                        {list}
                                     </tbody>
                                 </table>
                             </div>
